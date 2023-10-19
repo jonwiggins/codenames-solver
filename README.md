@@ -32,7 +32,7 @@ guess cards:
 ```
 
 ## Prose
-[Codenames](https://codenames.game/) (sometimes also called Codewords), is a game where 'tellers' give single-word hints in an effort to prompt 'guessers' to select either 8 or 9 cards for a 5x5 grid of 25 word cards.
+[Codenames](https://codenames.game/) (sometimes also called Codewords), is a game where `tellers` give single-word hints in an effort to prompt `guessers` to select either 8 or 9 cards for a 5x5 grid of 25 word cards.
 
 Some might see the combinatorics problem here: `nCr(25, 8) = 1,081,575` and `nCr(25, 9) = 2,042,975`
 
@@ -53,4 +53,4 @@ The size of the first dictionary means that about half of game positions can be 
 
 In the current solution, if the board position seeking to be encoded is too far down the combinations order that it can't fit into the dictionary, the script exits and requests the user to fit fewer cards into this hint.
 
-Solving the game in one hint for every board position requires a dictionary of 1,081,575 words.
+Solving the game in one hint for every board position requires a dictionary of 1,081,575 words for 8 cards and 2,042,975 for 9 cards.
